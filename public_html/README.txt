@@ -1,3 +1,5 @@
+- The files are in the public_html file
+
 - Please create a database with the name "savfood", and import the sql file in this database.
 
 - Only restaurant that are now selling food box will be shown in the restaurants result page. 

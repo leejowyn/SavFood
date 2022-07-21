@@ -81,7 +81,7 @@
                 $okay = false;
             }
             else {
-                $query = "SELECT * FROM customer WHERE cust_email='$email' AND cust_password=('$pw')";
+                $query = "SELECT * FROM customer WHERE cust_email='$email' AND cust_password=MD5('$pw')";
                 if ($r = mysqli_query($dbc, $query)) {
                     if (mysqli_num_rows($r) > 0) {
                         $row = mysqli_fetch_array($r);

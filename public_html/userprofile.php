@@ -74,7 +74,7 @@
 						$lastname = $_POST['cust_lname'];
 						$phone = $_POST['cust_phone'];
 						$email = $_POST['cust_email'];
-                        $pw = $row['cust_password'];
+                      				$pw = $row['cust_password'];
 		
 						$curl = curl_init();
 						
@@ -83,7 +83,7 @@
 							"cust_lname" => $lastname,
 							"cust_phone" => $phone,
 							"cust_email" => $email,
-							"cust_password" => $pw,
+							"cust_password" => MD5('$pw'),
 							"cust_id" =>$id,
 						);
 				  

@@ -88,7 +88,7 @@
                       $okay = false;
                    }
            else {
-                   $query = "SELECT * FROM restaurant WHERE restaurant_email='$email' AND restaurant_password=MD5('$pw')";
+                   $query = "SELECT * FROM restaurant WHERE restaurant_email='$email' AND restaurant_password=('$pw')";
                    $okay=true;
 						
 						if ($r = mysqli_query($dbc, $query)) {

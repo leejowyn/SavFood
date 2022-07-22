@@ -83,7 +83,7 @@
 							"cust_lname" => $lastname,
 							"cust_phone" => $phone,
 							"cust_email" => $email,
-							"cust_password" => ('$pw'),
+							"cust_password" => MD5('$pw'),
 							"cust_id" =>$id,
 						);
 				  
